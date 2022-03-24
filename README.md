@@ -2,6 +2,10 @@
 extraction of the keyword "ennedy" form the osm data of Italy
 
 a simple bash script based on ``wget``, ``osmium``, ``ogr2ogr``
+
+![](https://raw.githubusercontent.com/napo/kennedy_osm_data/main/img/kennedy_in_italy.png)
+
+
 ```bash
 wget https://download.geofabrik.de/europe/italy/centro-latest.osm.pbf
 osmium tags-filter -o kennedy_centro.pbf centro-latest.osm.pbf w/name=*ennedy
@@ -29,3 +33,6 @@ ogr2ogr -f GeoJSON kennedy_multipolygons.geojson kennedy_italy.pbf multipolygons
 ogr2ogr -f GeoJSON kennedy_multilinestrings.geojson kennedy_italy.pbf multilinestrings
 ogr2ogr -f GeoJSON kennedy_other_relations.geojson kennedy_italy.pbf other_relations
 ``` 
+
+
+
