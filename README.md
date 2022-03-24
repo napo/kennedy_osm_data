@@ -6,6 +6,8 @@ a simple bash script based on ``wget``, ``osmium``, ``ogr2ogr``
 ![](https://raw.githubusercontent.com/napo/kennedy_osm_data/main/img/kennedy_in_italy.png)
 
 
+Visit the [map](https://napo.github.io/kennedy_osm_data/)
+
 ```bash
 wget https://download.geofabrik.de/europe/italy/centro-latest.osm.pbf
 osmium tags-filter -o kennedy_centro.pbf centro-latest.osm.pbf w/name=*ennedy
